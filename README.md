@@ -1,5 +1,9 @@
 # simple-json-server-test
-適当なJSONの応答を返すコンテナを作るための Dockerfile などのサンプル
+## What's this?
+適当なJSONの応答を返すコンテナを作るためのサンプルです。
+
+JSON 形式でデータを定義するだけで、その JSON の中身を REST API の応答として返してくれる便利な OSS ([json-server](https://github.com/typicode/json-server)) があったので、活用させていただきました。
+また、Azure Container Apps などで動作させられる Docker Container としてビルドするための Dockerfile も作ってみました。
 
 ## How to Use
 ### ローカル実行
@@ -14,7 +18,7 @@ docker build . -t <tag>
 docker run -p <任意のポート番号>:3000 <tag>
 ```
 
-あとは任意のコンテナリポジトリにプッシュして煮るなり焼くなり。
+あとは任意のコンテナリポジトリにプッシュして煮るなり焼くなりできます。
 
 ### Azure Container Apps で実行
 以下の手順で Azure Container Apps で実行できます。
